@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="10dp">
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:layout_gravity="start">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <cf.androidprojects.onlinediary.MyTextView
+            android:id="@+id/post_date"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20/03/2016"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="10sp" />
+
+        <cf.androidprojects.onlinediary.MyTextView
+            android:id="@+id/post_title"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp" />
+        <cf.androidprojects.onlinediary.MyTextView
+            android:id="@+id/post_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Sample Desctiption Text"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            style="@style/TextAppearance.AppCompat.Subhead"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
